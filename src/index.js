@@ -6,6 +6,7 @@ import loadImageURL from './utils/load-image-url'
 import loadImageFile from './utils/load-image-file'
 
 const isTouchDevice = !!(
+  if(!window) return;
   typeof window !== 'undefined' &&
   typeof navigator !== 'undefined' &&
   ('ontouchstart' in window || navigator.msMaxTouchPoints > 0)
